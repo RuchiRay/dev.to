@@ -1,19 +1,10 @@
-import { useEffect ,useState} from "react";
-import { Splash } from "./components/Splash";
-
+import { HomePage } from "./pages/HomePage";
 
 function App() {
-  const [showSplash, setShowSplash] = useState(true)
-  useEffect(() => {
-   setTimeout(() => {
-    setShowSplash(false)
-   }, 5000);
-  }, [])
-  
+ 
   return (
     <div className="App">
-
-      {showSplash &&<Splash/>}
+     <HomePage/>
     </div>
   );
 }
